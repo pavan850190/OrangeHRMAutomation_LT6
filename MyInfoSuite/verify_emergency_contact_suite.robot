@@ -5,6 +5,7 @@ Documentation           This suite will handle valid credential
 Resource  ../Resource/CommonFunctionality.resource
 
 Test Setup   Launch Browser
+Test Teardown   Close Browser
 
 
 * Test Cases *
@@ -22,4 +23,3 @@ Valid Credential Test
    Input Text    id=emgcontacts_mobilePhone    5694623
    Input Text    id=emgcontacts_workPhone    256-123-145
    Click Element    id=btnSaveEContact
-   Close Browser

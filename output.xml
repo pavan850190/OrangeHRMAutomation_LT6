@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220510 10:09:15.378" rpa="false" schemaversion="3">
-<suite id="s1" name="verify Invalid credential suite" source="D:\OrangeHRMAutomation\LoginSuite\verify_Invalid_credential_suite.robot">
-<test id="s1-t1" name="Tc1" line="10">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220510 12:14:44.117" rpa="false" schemaversion="3">
+<suite id="s1" name="Verify Valid Credential Suite" source="D:\OrangeHRMAutomation\LoginSuite\verify_valid_credential_suite.robot">
+<test id="s1-t1" name="Tc1" line="14">
 <kw name="Launch Browser" library="CommonFunctionality" type="SETUP">
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <arg>Path</arg>
 <arg>${EXECDIR}${/}driver</arg>
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
-<msg timestamp="20220510 10:09:15.863" level="INFO">Environment variable 'Path' set to value 'C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\msys64\mingw64\bin;C;C;C:\Program Files\Git\cmd;C:\Users\pavan\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\pavan\AppData\Local\Programs\Python\Python310\;C:\Users\pavan\AppData\Local\Microsoft\WindowsApps;C:\Users\pavan\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\mingw64\bin;;D:\OrangeHRMAutomation\driver'.</msg>
-<status status="PASS" starttime="20220510 10:09:15.863" endtime="20220510 10:09:15.863"/>
+<msg timestamp="20220510 12:14:46.274" level="INFO">Environment variable 'Path' set to value 'C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\msys64\mingw64\bin;C;C;C:\Program Files\Git\cmd;C:\Users\pavan\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\pavan\AppData\Local\Programs\Python\Python310\;C:\Users\pavan\AppData\Local\Microsoft\WindowsApps;C:\Users\pavan\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\mingw64\bin;;D:\OrangeHRMAutomation\driver'.</msg>
+<status status="PASS" starttime="20220510 12:14:46.274" endtime="20220510 12:14:46.274"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220510 10:09:15.863" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20220510 10:09:15.863" endtime="20220510 10:09:18.824"/>
+<msg timestamp="20220510 12:14:46.274" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220510 12:14:46.274" endtime="20220510 12:15:10.400"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220510 10:09:18.825" endtime="20220510 10:09:18.982"/>
+<status status="PASS" starttime="20220510 12:15:10.400" endtime="20220510 12:15:10.639"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>30s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220510 10:09:18.982" endtime="20220510 10:09:18.982"/>
+<status status="PASS" starttime="20220510 12:15:10.639" endtime="20220510 12:15:10.639"/>
 </kw>
 <kw name="Set Screenshot Directory" library="SeleniumLibrary">
 <arg>${EXECDIR}${/}screanshots</arg>
 <doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" starttime="20220510 10:09:18.982" endtime="20220510 10:09:18.982"/>
+<status status="PASS" starttime="20220510 12:15:10.639" endtime="20220510 12:15:10.639"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220510 10:09:18.982" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/'</msg>
-<status status="PASS" starttime="20220510 10:09:18.982" endtime="20220510 10:09:41.199"/>
+<msg timestamp="20220510 12:15:10.639" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/'</msg>
+<status status="PASS" starttime="20220510 12:15:10.639" endtime="20220510 12:15:21.305"/>
 </kw>
-<status status="PASS" starttime="20220510 10:09:15.863" endtime="20220510 10:09:41.200"/>
+<status status="PASS" starttime="20220510 12:14:46.274" endtime="20220510 12:15:21.306"/>
 </kw>
-<kw name="Invalid Credential Template">
+<kw name="valid Credential Template">
 <arg>Admin</arg>
 <arg>admin123</arg>
 <arg>My Info</arg>
@@ -46,124 +46,139 @@
 <arg>id=txtUsername</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220510 10:09:41.202" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
-<status status="PASS" starttime="20220510 10:09:41.201" endtime="20220510 10:09:41.357"/>
+<msg timestamp="20220510 12:15:21.308" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20220510 12:15:21.307" endtime="20220510 12:15:24.313"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=txtPassword</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220510 10:09:41.358" level="INFO">Typing text 'admin123' into text field 'id=txtPassword'.</msg>
-<status status="PASS" starttime="20220510 10:09:41.357" endtime="20220510 10:09:41.493"/>
+<msg timestamp="20220510 12:15:24.314" level="INFO">Typing text 'admin123' into text field 'id=txtPassword'.</msg>
+<status status="PASS" starttime="20220510 12:15:24.314" endtime="20220510 12:15:24.465"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=btnLogin</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220510 10:09:41.493" level="INFO">Clicking element 'id=btnLogin'.</msg>
-<status status="PASS" starttime="20220510 10:09:41.493" endtime="20220510 10:10:07.076"/>
+<msg timestamp="20220510 12:15:24.466" level="INFO">Clicking element 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20220510 12:15:24.466" endtime="20220510 12:15:26.404"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>${expected_error}</arg>
+<arg>${expected_value}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220510 10:10:07.106" level="INFO">Current page contains text 'My Info'.</msg>
-<status status="PASS" starttime="20220510 10:10:07.076" endtime="20220510 10:10:07.106"/>
+<msg timestamp="20220510 12:16:06.286" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.54)
+</msg>
+<msg timestamp="20220510 12:16:06.286" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.54)
+</msg>
+<status status="FAIL" starttime="20220510 12:15:26.404" endtime="20220510 12:16:07.838"/>
 </kw>
-<status status="PASS" starttime="20220510 10:09:41.200" endtime="20220510 10:10:07.107"/>
+<status status="FAIL" starttime="20220510 12:15:21.306" endtime="20220510 12:16:07.838"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220510 10:10:07.108" endtime="20220510 10:10:09.418"/>
+<status status="PASS" starttime="20220510 12:16:07.838" endtime="20220510 12:16:10.126"/>
 </kw>
-<status status="PASS" starttime="20220510 10:09:15.863" endtime="20220510 10:10:09.418"/>
+<status status="FAIL" starttime="20220510 12:14:46.274" endtime="20220510 12:16:10.141">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.54)
+</status>
 </test>
-<test id="s1-t2" name="Tc2" line="11">
+<test id="s1-t2" name="Tc1" line="14">
 <kw name="Launch Browser" library="CommonFunctionality" type="SETUP">
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <arg>Path</arg>
 <arg>${EXECDIR}${/}driver</arg>
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
-<msg timestamp="20220510 10:10:09.418" level="INFO">Environment variable 'Path' set to value 'C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\msys64\mingw64\bin;C;C;C:\Program Files\Git\cmd;C:\Users\pavan\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\pavan\AppData\Local\Programs\Python\Python310\;C:\Users\pavan\AppData\Local\Microsoft\WindowsApps;C:\Users\pavan\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\mingw64\bin;;D:\OrangeHRMAutomation\driver;D:\OrangeHRMAutomation\driver'.</msg>
-<status status="PASS" starttime="20220510 10:10:09.418" endtime="20220510 10:10:09.418"/>
+<msg timestamp="20220510 12:16:10.141" level="INFO">Environment variable 'Path' set to value 'C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\msys64\mingw64\bin;C;C;C:\Program Files\Git\cmd;C:\Users\pavan\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\pavan\AppData\Local\Programs\Python\Python310\;C:\Users\pavan\AppData\Local\Microsoft\WindowsApps;C:\Users\pavan\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\mingw64\bin;;D:\OrangeHRMAutomation\driver;D:\OrangeHRMAutomation\driver'.</msg>
+<status status="PASS" starttime="20220510 12:16:10.141" endtime="20220510 12:16:10.141"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220510 10:10:09.418" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20220510 10:10:09.418" endtime="20220510 10:10:11.316"/>
+<msg timestamp="20220510 12:16:10.141" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220510 12:16:10.141" endtime="20220510 12:16:14.752"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220510 10:10:11.317" endtime="20220510 10:10:11.461"/>
+<status status="PASS" starttime="20220510 12:16:14.752" endtime="20220510 12:16:14.879"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>30s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220510 10:10:11.461" endtime="20220510 10:10:11.464"/>
+<status status="PASS" starttime="20220510 12:16:14.879" endtime="20220510 12:16:14.885"/>
 </kw>
 <kw name="Set Screenshot Directory" library="SeleniumLibrary">
 <arg>${EXECDIR}${/}screanshots</arg>
 <doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" starttime="20220510 10:10:11.465" endtime="20220510 10:10:11.466"/>
+<status status="PASS" starttime="20220510 12:16:14.885" endtime="20220510 12:16:14.886"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220510 10:10:11.468" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/'</msg>
-<status status="PASS" starttime="20220510 10:10:11.466" endtime="20220510 10:10:51.128"/>
+<msg timestamp="20220510 12:16:14.887" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/'</msg>
+<status status="PASS" starttime="20220510 12:16:14.886" endtime="20220510 12:16:22.446"/>
 </kw>
-<status status="PASS" starttime="20220510 10:10:09.418" endtime="20220510 10:10:51.129"/>
+<status status="PASS" starttime="20220510 12:16:10.141" endtime="20220510 12:16:22.446"/>
 </kw>
-<kw name="Invalid Credential Template">
+<kw name="valid Credential Template">
 <arg>Admin</arg>
-<arg>admin</arg>
+<arg>admin123</arg>
 <arg>welcome</arg>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=txtUsername</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220510 10:10:51.131" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
-<status status="PASS" starttime="20220510 10:10:51.130" endtime="20220510 10:10:51.313"/>
+<msg timestamp="20220510 12:16:22.449" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20220510 12:16:22.448" endtime="20220510 12:16:22.628"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=txtPassword</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220510 10:10:51.313" level="INFO">Typing text 'admin' into text field 'id=txtPassword'.</msg>
-<status status="PASS" starttime="20220510 10:10:51.313" endtime="20220510 10:10:51.500"/>
+<msg timestamp="20220510 12:16:22.628" level="INFO">Typing text 'admin123' into text field 'id=txtPassword'.</msg>
+<status status="PASS" starttime="20220510 12:16:22.628" endtime="20220510 12:16:22.816"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=btnLogin</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220510 10:10:51.500" level="INFO">Clicking element 'id=btnLogin'.</msg>
-<status status="PASS" starttime="20220510 10:10:51.500" endtime="20220510 10:10:59.625"/>
+<msg timestamp="20220510 12:16:22.831" level="INFO">Clicking element 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20220510 12:16:22.831" endtime="20220510 12:16:24.458"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>${expected_error}</arg>
+<arg>${expected_value}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220510 10:10:59.655" level="INFO">Current page contains text 'welcome'.</msg>
-<status status="PASS" starttime="20220510 10:10:59.625" endtime="20220510 10:10:59.655"/>
+<msg timestamp="20220510 12:16:24.488" level="INFO">Current page contains text 'welcome'.</msg>
+<status status="PASS" starttime="20220510 12:16:24.459" endtime="20220510 12:16:24.488"/>
 </kw>
-<status status="PASS" starttime="20220510 10:10:51.130" endtime="20220510 10:10:59.656"/>
+<status status="PASS" starttime="20220510 12:16:22.447" endtime="20220510 12:16:24.489"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220510 10:10:59.657" endtime="20220510 10:11:01.955"/>
+<status status="PASS" starttime="20220510 12:16:24.489" endtime="20220510 12:16:26.840"/>
 </kw>
-<status status="PASS" starttime="20220510 10:10:09.418" endtime="20220510 10:11:01.955"/>
+<status status="PASS" starttime="20220510 12:16:10.141" endtime="20220510 12:16:26.840"/>
 </test>
-<doc>thise suite will handle Invalid credential</doc>
-<status status="PASS" starttime="20220510 10:09:15.394" endtime="20220510 10:11:01.955"/>
+<doc>thise suite will handle valid credential</doc>
+<status status="FAIL" starttime="20220510 12:14:44.117" endtime="20220510 12:16:26.840"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="verify Invalid credential suite">verify Invalid credential suite</stat>
+<stat pass="1" fail="1" skip="0" id="s1" name="Verify Valid Credential Suite">Verify Valid Credential Suite</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20220510 12:16:06.286" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.54)
+</msg>
+<msg timestamp="20220510 12:16:10.141" level="WARN">Multiple tests with name 'Tc1' executed in suite 'Verify Valid Credential Suite'.</msg>
 </errors>
 </robot>

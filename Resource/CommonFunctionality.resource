@@ -4,7 +4,6 @@ Documentation       thise file will keep the configuration details
 Library     SeleniumLibrary
 Library     OperatingSystem
 Library    Collections
-
 *** Variables ***
 ${BROWSER}      chrome
 ${URL}      https://opensource-demo.orangehrmlive.com/
